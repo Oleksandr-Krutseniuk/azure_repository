@@ -5,11 +5,8 @@ metadata:
   name: mysql-pv-claim
 spec:
   accessModes:
-    - ReadWriteMany 
-  storageClassName: ""    
+    - ReadWriteOnce 
   resources:
     requests:
       storage: 2Gi
-  selector: 
-    matchLabels:
-      app: mysql-pv    
+   
